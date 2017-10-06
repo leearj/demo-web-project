@@ -132,4 +132,13 @@ public class WebController {
 		return modelAndView;
 	}
 
+	//Justin's API Call
+	@RequestMapping(value = "/cs480/jhan", method = RequestMethod.GET)
+	String Test() {
+		String message = "<html><body style=\"color: #0000ff; text-white: 3px 3px #000; font-size: 36px;\"><h1>Testtttttttt</h1>"
+				+ "<img style=\"width: 1200px; height: auto;\" src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBfB_ieMn099EnQHVnGYRJQrY2p9PfxT-taj04FNq60G1CD-KV\" />"
+				+ "</body></html>";
+		return message;
+	}
+
 }
