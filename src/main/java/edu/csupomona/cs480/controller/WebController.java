@@ -140,5 +140,14 @@ public class WebController {
 				+ "</body></html>";
 		return message;
 	}
+	
+	//Jaeseung's API Call
+		@RequestMapping(value = "/cs480/jlee", method = RequestMethod.GET)
+		String Test() {
+			String message = "<html><body style=\"color: #0000fc; text-white: 3px 3px #000; font-size: 28px;\"><h1>Lee's Owl is watching you</h1>"
+					+ "<img src=\"http://dreamicus.com/data/owl/owl-01.jpg\" />"
+					+ "</body></html>";
+			return message;
+		}
 
 }
